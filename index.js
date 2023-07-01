@@ -6,6 +6,8 @@ const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 //const renderLicenseBadge = require('./utils/licenseBadge');
 
+const writeFileAsync = util.promisify(fs.writeFile);
+
 // TODO: Create an array of questions for user input
 const questions = [ {
     type: "input",
