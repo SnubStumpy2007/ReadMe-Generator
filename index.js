@@ -82,7 +82,16 @@ const questions = [ {
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+  try {
+    const answers = await inquirer.prompt(questions);
+    answers.licenseBadge = licenseBadge(answers.license);
+    let readMeData = generateMarkdown(answers);
+    await writeFileAsync("created-README.md", readMeData);
+  } catch (err) {
+    throw err;
+  }
+}
 
 // Function call to initialize app
 init();
