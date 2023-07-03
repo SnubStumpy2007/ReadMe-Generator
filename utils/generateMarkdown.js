@@ -29,7 +29,7 @@ function generateMarkdown(data) {
 
   ${data.description}
 
-  ${data.licenseBadge}
+  ${data.yourLicense}
 
   [A deployed version can be viewed here.](${data.URL})
   

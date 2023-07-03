@@ -2,6 +2,7 @@
 const fs = require('fs');
 const inquirer = ('inquirer');
 const util = require('util');
+//import inquirer from 'inquirer';
 
 const generateMarkdown = require('./utils/generateMarkdown');
 //const renderLicenseBadge = require('./utils/licenseBadge');
@@ -83,7 +84,7 @@ const questions = [ {
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+//TODO: Create a function to initialize app
 async function init() {
   try {
     const answers = await inquirer.prompt(questions);
@@ -103,5 +104,6 @@ console.log(questions);
 
 
 // sources
+// https://geshan.com.np/blog/2023/03/inquirer-js/
 // https://github.com/jfisher396/readme-generator
 // https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
