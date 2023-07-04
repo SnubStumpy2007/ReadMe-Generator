@@ -1,12 +1,9 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
-const inquirer = ('inquirer');
+const path = require('path');
+const inquirer = require('inquirer');
 const util = require('util');
-//import inquirer from 'inquirer';
-
 const generateMarkdown = require('./utils/generateMarkdown');
-//const renderLicenseBadge = require('./utils/licenseBadge');
-
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
@@ -82,15 +79,16 @@ const questions = [ {
 ];
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return fs.writeFileSync(path.join(process.cwd(),fileName),data)
+}
 
 //TODO: Create a function to initialize app
 async function init() {
   try {
     const answers = await inquirer.prompt(questions);
-    answers.licenseBadge = licenseBadge(answers.license);
-    let readMeData = generateMarkdown(answers);
-    await writeFileAsync("created-README.md", readMeData);
+    console.log(answers);
+    await writeToFile("created-README.md", generateMarkdown({...answers}));
   } catch (err) {
     throw err;
   }
@@ -98,12 +96,9 @@ async function init() {
 
 // Function call to initialize app
 init();
-console.log(questions);
-
-
-
 
 // sources
+// Tutor  Daniel Sires
 // https://geshan.com.np/blog/2023/03/inquirer-js/
 // https://github.com/jfisher396/readme-generator
 // https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
