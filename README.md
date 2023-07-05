@@ -35,5 +35,11 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 When contributing to this project, please follow the Contributor Covenant code of conduct.
 
-License
+# License
 This project is licensed under the MIT License. You are free to modify and distribute the code, but please include attribution to the original author.
+
+# Sources
+Tutor Daniel Sires
+https://geshan.com.np/blog/2023/03/inquirer-js/
+https://github.com/jfisher396/readme-generator
+https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
