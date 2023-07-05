@@ -22,7 +22,7 @@ function generateMarkdown(data) {
 
   ${data.description}
 
-  ${data.yourLicense}
+  ${data.license}
 
   [A deployed version can be viewed here.](${data.URL})
   
@@ -49,7 +49,7 @@ function generateMarkdown(data) {
 
 ## User Story
   
-
+${data.about}
 ---
 
 ## Acceptance Criteria
@@ -106,6 +106,10 @@ function generateMarkdown(data) {
 ## Contact Information:
 * GitHub Username: ${data.userName}
 * GitHub Email: ${data.userEmail}
+
+## GitHub Link and Repo
+* GitHub Url: ${data.URL}
+* GitHub Repo: ${data.repo}
   
 `;
 }

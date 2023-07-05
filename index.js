@@ -10,7 +10,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [ {
     type: "input",
     name: "title",
-    message: "What is the title of your project?",
+    message: "What is the title of your project?", 
   },
   {
     type: "input",
@@ -19,18 +19,18 @@ const questions = [ {
   },
   {
     type: "input",
-    message: "Please tell us about your project:",
-    name: "about",
+    message: "Please tell us your user story:",
+    name: "about", 
   },
   {
     type: "input",
     message: "What are the installation instructions for your project?",
-    name: "installation",
+    name: "installation", 
   },
   {
     type: "input",
     message: "What is the link to clone the repo?",
-    name: "clone",
+    name: "clone", 
   },
   {
     type: "list",
@@ -49,12 +49,12 @@ const questions = [ {
   {
     type: "input",
     message: "Please enter any testing protocols you used for your project?",
-    name: "test",
+    name: "test", 
   },
   {
     type: "input",
     name: "author",
-    message: "What is your name?",
+    message: "What is your name?", 
   },
   {
     type: "input",
@@ -64,7 +64,7 @@ const questions = [ {
   {
     type: "input",
     name: "userEmail",
-    message: "What is your email?",
+    message: "What is your email?",  
   },
   {
     type: "input",
@@ -98,7 +98,7 @@ async function init() {
 init();
 
 // sources
-// Tutor  Daniel Sires
+// Tutor Daniel Sires
 // https://geshan.com.np/blog/2023/03/inquirer-js/
 // https://github.com/jfisher396/readme-generator
 // https://stackoverflow.com/questions/67013842/trying-to-place-license-badge-within-readme-md-using-node-js-but-getting-error-a
