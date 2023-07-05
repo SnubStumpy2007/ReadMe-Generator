@@ -87,7 +87,6 @@ function writeToFile(fileName, data) {
 async function init() {
   try {
     const answers = await inquirer.prompt(questions);
-    console.log(answers);
     await writeToFile("created-README.md", generateMarkdown({...answers}));
   } catch (err) {
     throw err;
