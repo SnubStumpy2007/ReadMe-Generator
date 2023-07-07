@@ -1,10 +1,10 @@
-# test
+# ReadMe Generator
 
-  This a test readme
+  Generate a readme
 
   MIT
 
-  [A deployed version can be viewed here.]()
+  [A deployed version can be viewed here.](none)
   
 ---
 ## Contents
@@ -23,13 +23,13 @@
 ---
 ## About
 
-  I want to generate a readme for a school project
+  I want to generate a readme and link to my github
 
 ---
 
 ## User Story
   
-I want to generate a readme for a school project
+I want to generate a readme and link to my github
 ---
 
 ## Acceptance Criteria
@@ -43,11 +43,11 @@ I want to generate a readme for a school project
 ---
 
 ## Installation:
-  Download files from GitHub.  Open in Visual Studio Code, open a new terminal, navigate to index.js directory, then use command node index.js to run file.
+  clone repo, then open in VS Code, navigate to directory, then run node index.js
 
   To clone the repo:
   
-      git clone https://github.com/SnubStumpy2007/ReadMe-Generator
+      git clone git@github.com:SnubStumpy2007/ReadMe-Generator.git
   
 ---
 
@@ -74,7 +74,7 @@ I want to generate a readme for a school project
 ---
 
 ## Tests:
-  None
+  none
 
 ---
 
@@ -88,6 +88,6 @@ I want to generate a readme for a school project
 * GitHub Email: joshua192007@gmail.com
 
 ## GitHub Link and Repo
-* GitHub Url: 
-* GitHub Repo: https://github.com/SnubStumpy2007/ReadMe-Generator
+* GitHub Url: none
+* GitHub Repo: git@github.com:SnubStumpy2007/ReadMe-Generator.git
   
